@@ -7,6 +7,9 @@
   History: 
 *************************************************************************************/
 
+#ifndef   BASEENTRY_H_FILE
+#define   BASEENTRY_H_FILE
+
 #ifdef WIN32
 #define DLLIMP __declspec(dllimport)
 #define DLLEXP __declspec(dllexport)
@@ -15,16 +18,10 @@
 class CBaseEntry
 {
 public:
-	CBaseEntry();
-	~CBaseEntry();
+	CBaseEntry(){};
+	~CBaseEntry(){};
 	virtual void execute() = 0;
 private:
 };
 
-CBaseEntry::CBaseEntry()
-{
-}
-
-CBaseEntry::~CBaseEntry()
-{
-}
+#endif

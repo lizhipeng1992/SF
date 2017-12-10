@@ -19,12 +19,13 @@ CSmartEngine* CSmartEngine::m_AppOperation = NULL;
 bool CSmartEngine::SEngineInit()
 {
 	CLibrary *lib = new CLibrary();
-	lib->Load("F:\\vs2012Proj\\SmartFrame\\SmartFrame\\bin\\libbusiness.dll");
+	lib->LibLoad("F:\\vs2012Proj\\SmartFrame\\SmartFrame\\bin\\libbusiness.dll");
+	lib->LibExecute();
 	return true;
 }
 
 //主处理函数
-void CSmartEngine::SengineProcess()
+void CSmartEngine::SEngineProcess()
 {
 	return;
 }

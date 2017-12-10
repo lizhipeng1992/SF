@@ -16,7 +16,7 @@ int main(int argc, char* argv[])
 	//2.Æô¶¯Ó¦ÓÃ
 	try
 	{
-		CSmartEngine::GetInstance()->SengineProcess();
+		CSmartEngine::GetInstance()->SEngineProcess();
 	}
 	catch(...)
 	{

@@ -81,14 +81,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="business\FrameContext.cpp" />
-    <ClCompile Include="business\Library.cpp" />
     <ClCompile Include="business\SmartEngine.cpp" />
+    <ClCompile Include="Library.cpp" />
     <ClCompile Include="SmartFrame.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="business\Library.h" />
     <ClInclude Include="include\BaseEntry.h" />
     <ClInclude Include="include\FrameContext.h" />
+    <ClInclude Include="include\Library.h" />
     <ClInclude Include="include\SmartEngine.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

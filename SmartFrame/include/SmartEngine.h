@@ -26,7 +26,7 @@ public:
 	}
 
 	bool SEngineInit();
-	void SengineProcess();
+	void SEngineProcess();
 private:
 	CSmartEngine(){};
 	static CSmartEngine *m_AppOperation;

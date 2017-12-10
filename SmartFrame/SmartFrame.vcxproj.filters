@@ -24,10 +24,10 @@
     <ClCompile Include="business\SmartEngine.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="business\Library.cpp">
+    <ClCompile Include="business\FrameContext.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="business\FrameContext.cpp">
+    <ClCompile Include="Library.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -35,13 +35,13 @@
     <ClInclude Include="include\SmartEngine.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="business\Library.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="include\BaseEntry.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\FrameContext.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Library.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
