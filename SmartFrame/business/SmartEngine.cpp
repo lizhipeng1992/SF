@@ -9,6 +9,8 @@
 
 #include "SmartEngine.h"
 #include "Library.h"
+#include "EString.h"
+
 #ifdef WIN32
 #include<Windows.h>
 #endif // WIN32
@@ -18,8 +20,11 @@ CSmartEngine* CSmartEngine::m_AppOperation = NULL;
 //应用初始化
 bool CSmartEngine::SEngineInit()
 {
+	CEString esLibPath;
+	esLibPath.SetData("F:\\vs2012Proj\\SmartFrame\\SmartFrame\\bin\\libbusiness.dll");
+
 	CLibrary *lib = new CLibrary();
-	lib->LibLoad("F:\\vs2012Proj\\SmartFrame\\SmartFrame\\bin\\libbusiness.dll");
+	lib->LibLoad(esLibPath.GetData());
 	lib->LibExecute();
 	return true;
 }
