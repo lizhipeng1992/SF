@@ -9,10 +9,6 @@
 
 #include "Library.h"
 
-#ifdef WIN32
-#include<Windows.h>
-#endif
-
 CLibrary::CLibrary()
 {
 }
@@ -25,14 +21,14 @@ CLibrary::~CLibrary()
 bool CLibrary::LibLoad(const char* pszLibPath)
 {
 	//1.获取条带句柄
-	void *pLibHandle = LoadLibrary(pszLibPath);
+	void *pLibHandle = MPLoadLibrary(pszLibPath);
 	if (0 == pLibHandle)
 	{
 		return false;
 	}
 
 	//2.获取导出接口指针
-	void *pQryInter = GetProcAddress((HMODULE)pLibHandle, "QryInterface");
+	void *pQryInter = MPGetProcAddr((HMODULE)pLibHandle, "DllEntry");
 	if (0 == pQryInter)
 	{
 		return false;

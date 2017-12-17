@@ -44,5 +44,8 @@
     <ClInclude Include="include\Library.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="include\public.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

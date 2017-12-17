@@ -1,25 +1,17 @@
 /*************************************************************************************
-  FileName: F:\vs2012Proj\SmartFrame\SmartFrame\lib\libbase\include\Object.h
+  FileName: F:\vs2012Proj\SmartFrame\SmartFrame\lib\libbase\business\ObjectBase.cpp
   Author:   lizhipeng
   Version : 1.0.0.0
   Date:2017/12/11
   Description: 
   History: 
 *************************************************************************************/
+#include "ObjectBase.h"
 
-#ifndef   OBJECT_H_FILE
-#define   OBJECT_H_FILE
-
-#include <stdio.h>
-#include <string.h>
-class CObject
+CObjectBase::CObjectBase()
 {
-public:
-	CObject();
-	~CObject();
+}
 
-private:
-
-};
-
-#endif
+CObjectBase::~CObjectBase()
+{
+}

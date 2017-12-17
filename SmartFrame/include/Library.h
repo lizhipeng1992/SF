@@ -10,7 +10,10 @@
 #ifndef   LIBRARY_H_FILE
 #define   LIBRARY_H_FILE
 
+#include "public.h"
 #include "BaseEntry.h"
+#include "MpDll.h"
+
 typedef CBaseEntry *(BaseEntry)();
 
 class CLibrary

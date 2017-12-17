@@ -9,7 +9,7 @@
 
 #include "libentry.h"
 
-CBaseEntry *QryInterface()
+CBaseEntry *DllEntry()
 {
 	return new CLibentry;
 }

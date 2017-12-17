@@ -11,7 +11,7 @@
 #include "BaseEntry.h"
 
 extern "C"
-DLLIMP CBaseEntry *QryInterface();
+DLLIMP CBaseEntry *DllEntry();
 
 class CLibentry : public CBaseEntry
 {

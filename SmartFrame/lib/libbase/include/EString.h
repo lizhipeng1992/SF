@@ -10,9 +10,9 @@
 #ifndef   ESTRING_H_FILE
 #define   ESTRING_H_FILE
 
-#include "Object.h"
+#include "ObjectBase.h"
 
-class CEString : public CObject
+class CEString : public CObjectBase
 {
 public:
 	//通用构造函数

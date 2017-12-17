@@ -9,9 +9,9 @@
 #ifndef   JSON_H_FILE
 #define   JSON_H_FILE
 
-#include "Object.h"
+#include "ObjectBase.h"
 
-class CJson : public CObject
+class CJson : public CObjectBase
 {
 public:
 	CJson();

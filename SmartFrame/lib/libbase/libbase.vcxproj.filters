@@ -18,13 +18,16 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\Object.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="include\Json.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\EString.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FileBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ObjectBase.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -32,10 +35,13 @@
     <ClCompile Include="business\Json.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="business\Object.cpp">
+    <ClCompile Include="business\EString.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="business\EString.cpp">
+    <ClCompile Include="business\FileBase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="business\ObjectBase.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

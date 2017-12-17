@@ -77,13 +77,15 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\FileBase.h" />
     <ClInclude Include="include\Json.h" />
-    <ClInclude Include="include\Object.h" />
+    <ClInclude Include="include\ObjectBase.h" />
     <ClInclude Include="include\EString.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="business\FileBase.cpp" />
     <ClCompile Include="business\Json.cpp" />
-    <ClCompile Include="business\Object.cpp" />
+    <ClCompile Include="business\ObjectBase.cpp" />
     <ClCompile Include="business\EString.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

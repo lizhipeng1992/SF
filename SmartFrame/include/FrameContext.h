@@ -7,7 +7,7 @@
   History: 
 *************************************************************************************/
 
-#include <stdio.h>
+#include "public.h"
 
 class CFrameContext
 {
