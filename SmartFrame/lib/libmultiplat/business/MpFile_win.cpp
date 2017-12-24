@@ -20,4 +20,10 @@ char *MPGetCurrPath(char *szPathBuf, size_t size)
 {
 	return _getcwd(szPathBuf, size);
 }
+
+int MPFileClose(FILE *pFile)
+{
+	return fclose(pFile);
+}
+
 #endif

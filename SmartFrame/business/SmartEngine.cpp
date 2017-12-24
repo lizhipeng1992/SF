@@ -3,7 +3,7 @@
   Author:   lizhipeng
   Version : 1.0.0.0
   Date:2017/11/23
-  Description: 
+  Description: 服务主文件
   History: 
 *************************************************************************************/
 
@@ -14,6 +14,11 @@
 
 CSmartEngine* CSmartEngine::m_AppOperation = NULL;
 
+CSmartEngine::CSmartEngine()
+{
+	//获取配置文件目录
+	MPGetCurrPath(m_szWorkPath, SE_PATH_MAX);
+}
 //应用初始化
 bool CSmartEngine::SEngineInit(const char *pszConfigFile)
 {
@@ -26,12 +31,17 @@ bool CSmartEngine::SEngineInit(const char *pszConfigFile)
 //预处理
 void CSmartEngine::SEnginePreDeal()
 {
+	//库文件路径
+	CEString esLibName;
+	esLibName.SetData("libbusiness.dll");
+
 	CEString esLibPath;
-	esLibPath.SetData("F:\\vs2012Proj\\SmartFrame\\SmartFrame\\bin\\libbusiness.dll");
+	esLibPath.Format("%s%s%s", m_szWorkPath, SE_PATH_SPLIT_CHAR, esLibName.GetData());
 
 	CLibrary *lib = new CLibrary();
 	lib->LibLoad(esLibPath.GetData());
 	lib->LibExecute();
+	delete lib;
 }
 
 //主处理函数
@@ -50,13 +60,14 @@ void CSmartEngine::SEngineProcess()
 //加载配置文件
 void CSmartEngine::LoadEngineConfig(const char *pszConfigFile)
 {
-	//获取配置文件目录
-	char szPathBuf[SE_PATH_MAX] = {0};
-	MPGetCurrPath(szPathBuf, SE_PATH_MAX);
-
+	//配置文件路径
 	CEString esConfPath;
-	esConfPath.Format("%s%s%s", szPathBuf, SE_PATH_SPLIT_CHAR, pszConfigFile);
+	esConfPath.Format("%s%s%s", m_szWorkPath, SE_PATH_SPLIT_CHAR, pszConfigFile);
 	printf("esConfig is %s", esConfPath.GetData());
+
+	//打开文件
+	FILE *fileConf = MPFileOpen(pszConfigFile, SE_FILE_READ);
+
 
 }
 

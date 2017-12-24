@@ -10,12 +10,15 @@
 #include "SmartEngine.h"
 int main(int argc, char* argv[])
 {
-	//1.初始化应用
+	//初始化应用
 	CSmartEngine::GetInstance()->SEngineInit(argv[1]);
 
-	//2.启动应用
 	try
 	{
+		//应用预处理
+		CSmartEngine::GetInstance()->SEnginePreDeal();
+
+		//启动应用
 		CSmartEngine::GetInstance()->SEngineProcess();
 	}
 	catch(...)

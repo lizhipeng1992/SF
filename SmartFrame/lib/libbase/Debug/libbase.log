@@ -1,4 +1,4 @@
-﻿Build started 2017/12/24 18:10:08.
+﻿Build started 2017/12/24 22:45:21.
      1>Project "F:\vs2012Proj\SmartFrame\SmartFrame\lib\libbase\libbase.vcxproj" on node 2 (Build target(s)).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(346,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
      1>ClCompile:
@@ -12,7 +12,9 @@
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : 参见“strcpy”的声明
      1>f:\vs2012proj\smartframe\smartframe\lib\libbase\business\estring.cpp(71): warning C4996: 'vsprintf': This function or variable may be unsafe. Consider using vsprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : 参见“vsprintf”的声明
-     1>f:\vs2012proj\smartframe\smartframe\lib\libbase\business\estring.cpp(75): warning C4172: 返回局部变量或临时变量的地址
+     1>f:\vs2012proj\smartframe\smartframe\lib\libbase\business\estring.cpp(76): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : 参见“strcpy”的声明
+     1>f:\vs2012proj\smartframe\smartframe\lib\libbase\business\estring.cpp(78): warning C4172: 返回局部变量或临时变量的地址
        Lib:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"..\..\bin\libbase.lib" /NOLOGO Debug\FileBase.obj
          Debug\Json.obj
@@ -23,4 +25,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.27
+Time Elapsed 00:00:00.28

@@ -71,12 +71,15 @@ const char* CEString::Format( const char *pszFormat, ... )
 	vsprintf(szBuffer, pszFormat, ap);
 	va_end(ap);
 
-	m_data = szBuffer;
+	m_length = strlen(szBuffer);
+	m_data = new char[m_length + 1];
+	strcpy(m_data, szBuffer);
+
 	return szBuffer;
 }
 
 CEString::~CEString()
 {
-	delete m_data;
 	m_length = 0;
+	delete m_data;
 }

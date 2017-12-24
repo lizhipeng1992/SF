@@ -29,8 +29,11 @@ public:
 	void SEnginePreDeal();
 	void SEngineProcess();
 private:
-	CSmartEngine(){};
+	CSmartEngine();
 
 	void LoadEngineConfig(const char *pszConfigFile);
 	static CSmartEngine *m_AppOperation;
+
+	//¹¤×÷Ä¿Â¼
+	char m_szWorkPath[SE_PATH_MAX];
 };
