@@ -7,6 +7,8 @@
   History: 
 *************************************************************************************/
 
+#ifndef   FRAMECONTEXT_H_FILE
+#define   FRAMECONTEXT_H_FILE
 #include "public.h"
 
 class CFrameContext
@@ -35,3 +37,5 @@ CFrameContext::CFrameContext()
 CFrameContext::~CFrameContext()
 {
 }
+
+#endif

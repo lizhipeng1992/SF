@@ -92,6 +92,7 @@
     <ClInclude Include="include\FrameContext.h" />
     <ClInclude Include="include\Library.h" />
     <ClInclude Include="include\public.h" />
+    <ClInclude Include="include\SEngineConst.h" />
     <ClInclude Include="include\SmartEngine.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

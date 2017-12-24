@@ -11,7 +11,7 @@
 int main(int argc, char* argv[])
 {
 	//1.初始化应用
-	CSmartEngine::GetInstance()->SEngineInit();
+	CSmartEngine::GetInstance()->SEngineInit(argv[1]);
 
 	//2.启动应用
 	try

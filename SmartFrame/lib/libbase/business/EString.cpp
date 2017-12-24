@@ -63,6 +63,18 @@ const void CEString::SetData( const char *pStr /*= NULL*/ )
 	}
 }
 
+const char* CEString::Format( const char *pszFormat, ... )
+{
+	char szBuffer [204800] = {0};
+	va_list ap;
+	va_start(ap, pszFormat);
+	vsprintf(szBuffer, pszFormat, ap);
+	va_end(ap);
+
+	m_data = szBuffer;
+	return szBuffer;
+}
+
 CEString::~CEString()
 {
 	delete m_data;

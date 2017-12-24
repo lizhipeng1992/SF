@@ -11,6 +11,7 @@
 #define   ESTRING_H_FILE
 
 #include "ObjectBase.h"
+#include <stdarg.h>
 
 class CEString : public CObjectBase
 {
@@ -26,6 +27,7 @@ public:
 
 	const char* GetData();
 	const void SetData(const char *pStr = NULL);
+	const char* Format(const char *pszFormat, ...);
 
 	~CEString();
 

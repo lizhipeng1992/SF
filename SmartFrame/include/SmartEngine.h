@@ -25,9 +25,12 @@ public:
 		return m_AppOperation;
 	}
 
-	bool SEngineInit();
+	bool SEngineInit(const char *pszConfigFile);
+	void SEnginePreDeal();
 	void SEngineProcess();
 private:
 	CSmartEngine(){};
+
+	void LoadEngineConfig(const char *pszConfigFile);
 	static CSmartEngine *m_AppOperation;
 };

@@ -29,10 +29,16 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="business\MpFile.cpp">
+    <ClCompile Include="business\MpDll_win.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="business\MpDll.cpp">
+    <ClCompile Include="business\MpDll_unix.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="business\MPFile_unix.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="business\MpFile_win.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

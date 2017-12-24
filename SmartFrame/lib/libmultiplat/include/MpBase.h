@@ -6,6 +6,8 @@
   Description: 跨平台库公共头文件
   History: 
 *************************************************************************************/
+#ifndef   MPBASE_H_FILE
+#define   MPBASE_H_FILE
 
 enum PLATTYPE
 {
@@ -21,3 +23,12 @@ enum PLATTYPE
 #define HANDLE_MOD void
 #endif
 
+#if WIN32
+#include <Windows.h>
+#include <direct.h>
+#elif
+#include <dlfcn.h>
+#include <unistd.h>
+#endif
+
+#endif

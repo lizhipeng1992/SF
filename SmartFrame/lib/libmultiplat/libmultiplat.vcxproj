@@ -82,8 +82,10 @@
     <ClInclude Include="include\MpFile.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="business\MpDll.cpp" />
-    <ClCompile Include="business\MpFile.cpp" />
+    <ClCompile Include="business\MpDll_unix.cpp" />
+    <ClCompile Include="business\MpDll_win.cpp" />
+    <ClCompile Include="business\MpFile_win.cpp" />
+    <ClCompile Include="business\MPFile_unix.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

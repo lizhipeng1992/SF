@@ -20,17 +20,17 @@ CFileBase::~CFileBase()
 //打开文件
 int CFileBase::Open( const char *pszFileName, int iFlags, int iMode /*= 0*/ )
 {
-	
+	return -1;
 }
 
 //创建文件
 int CFileBase::Create( const char *pszFileName, int iMode /*= 0*/ )
 {
-
+	return -1;
 }
 
 //关闭文件
 int CFileBase::Close( int iFileDes )
 {
-
+	return -1;
 }
