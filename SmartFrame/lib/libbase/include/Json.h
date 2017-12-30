@@ -9,16 +9,15 @@
 #ifndef   JSON_H_FILE
 #define   JSON_H_FILE
 
-#include "ObjectBase.h"
+#include "json/json.h"
 
-class CJson : public CObjectBase
+class CJson : public Json::Value
 {
 public:
 	CJson();
 	~CJson();
 
 private:
-
-};
+}; 
 
 #endif

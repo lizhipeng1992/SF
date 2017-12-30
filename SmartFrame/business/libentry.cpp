@@ -8,6 +8,7 @@
 *************************************************************************************/
 
 #include "libentry.h"
+#include "BSSubsLoginChk.h"
 
 CBaseEntry *DllEntry()
 {
@@ -17,5 +18,7 @@ CBaseEntry *DllEntry()
 void CLibentry::execute()
 {
 	printf("we will rock you");
+	CBSSubsLoginChk bsSubsLoginChk;
+	bsSubsLoginChk.SubsPswdChk();
 	return;
 }

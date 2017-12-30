@@ -77,16 +77,36 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\FileBase.h" />
+    <ClInclude Include="business\json\json_batchallocator.h" />
     <ClInclude Include="include\Json.h" />
+    <ClInclude Include="include\json\autolink.h" />
+    <ClInclude Include="include\json\config.h" />
+    <ClInclude Include="include\json\features.h" />
+    <ClInclude Include="include\json\forwards.h" />
+    <ClInclude Include="include\json\json.h" />
+    <ClInclude Include="include\json\reader.h" />
+    <ClInclude Include="include\json\value.h" />
+    <ClInclude Include="include\json\writer.h" />
     <ClInclude Include="include\ObjectBase.h" />
     <ClInclude Include="include\EString.h" />
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="business\FileBase.cpp" />
     <ClCompile Include="business\Json.cpp" />
+    <ClCompile Include="business\json\json_reader.cpp" />
+    <ClCompile Include="business\json\json_value.cpp" />
+    <ClCompile Include="business\json\json_writer.cpp" />
     <ClCompile Include="business\ObjectBase.cpp" />
     <ClCompile Include="business\EString.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="libbase.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="business\json\json_internalarray.inl" />
+    <None Include="business\json\json_internalmap.inl" />
+    <None Include="business\json\json_valueiterator.inl" />
+    <None Include="business\json\sconscript" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

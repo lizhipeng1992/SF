@@ -1,4 +1,4 @@
-﻿Build started 2017/12/24 22:56:36.
+﻿Build started 2017/12/31 0:42:26.
      1>Project "F:\vs2012Proj\SmartFrame\SmartFrame\SmartFrame.vcxproj" on node 2 (Build target(s)).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(346,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
      1>Link:

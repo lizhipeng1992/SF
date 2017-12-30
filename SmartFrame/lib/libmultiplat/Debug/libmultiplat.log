@@ -1,18 +1,11 @@
-﻿Build started 2017/12/24 19:14:01.
+﻿Build started 2017/12/30 23:53:22.
      1>Project "F:\vs2012Proj\SmartFrame\SmartFrame\lib\libmultiplat\libmultiplat.vcxproj" on node 2 (Build target(s)).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(346,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt business\MPFile_unix.cpp business\MpDll_win.cpp business\MpFile_win.cpp
-         MPFile_unix.cpp
-         正在生成代码...
-         正在编译...
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt business\MpFile_win.cpp
          MpFile_win.cpp
      1>f:\vs2012proj\smartframe\smartframe\lib\libmultiplat\business\mpfile_win.cpp(16): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : 参见“fopen”的声明
-         正在生成代码...
-         正在编译...
-         MpDll_win.cpp
-         正在生成代码...
        Lib:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"..\..\bin\libmultiplat.lib" /NOLOGO Debug\MpDll_unix.obj
          Debug\MpDll_win.obj
@@ -23,4 +16,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.45
+Time Elapsed 00:00:00.59
