@@ -19,12 +19,10 @@ CBSSubsLoginChk::~CBSSubsLoginChk()
 {
 }
 
-bool CBSSubsLoginChk::SubsPswdChk()
+bool CBSSubsLoginChk::SubsPswdChk(CJson jsSubsInfo)
 {
-	CJson jsSubsPwd;
-	jsSubsPwd["passWord"] = "1234";
-
-	if (0 == strcmp(jsSubsPwd["passWord"].GetData(), "1234"))
+	if (0 == strcmp(jsSubsInfo["passWord"].GetStr(), "1234")
+		&& 0 == strcmp(jsSubsInfo["userName"].GetStr(), "lzp"))
 	{
 		return true;
 	}

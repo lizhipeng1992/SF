@@ -15,12 +15,14 @@
 #define DLLEXP __declspec(dllexport)
 #endif
 
+#include "ProtoImpl.h"
+
 class CBaseEntry
 {
 public:
 	CBaseEntry(){};
 	~CBaseEntry(){};
-	virtual void execute() = 0;
+	virtual void execute(CProtoImpl *pProtoImpl) = 0;
 private:
 };
 

@@ -43,6 +43,11 @@ bool CLibrary::LibLoad(const char* pszLibPath)
 //执行条带目标代码逻辑
 bool CLibrary::LibExecute()
 {
-	m_pEntry()->execute();
+	CProtoImpl *pProtoImpl = new CProtoImpl();
+	pProtoImpl->SetProcCode("LoginChk");
+	pProtoImpl->m_MsgBody["passWord"] = "1234";
+	pProtoImpl->m_MsgBody["userName"] = "lzp";
+	m_pEntry()->execute(pProtoImpl);
+	delete pProtoImpl;
 	return true;
 }

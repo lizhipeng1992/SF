@@ -235,7 +235,7 @@ namespace Json {
       bool asBool() const;
 
 	  //add begin by lizhipeng at 2017/12/30
-	  const char *GetData() const{return asCString();};
+	  const char *GetStr() const{return asCString();};
 	  Int GetInt() const{return asInt();};
 	  UInt GetUInt() const{return asUInt();};
 	  double GetDouble() const{return asDouble();};

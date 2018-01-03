@@ -78,6 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="business\json\json_batchallocator.h" />
+    <ClInclude Include="include\BaseProtocol.h" />
     <ClInclude Include="include\Json.h" />
     <ClInclude Include="include\json\autolink.h" />
     <ClInclude Include="include\json\config.h" />
@@ -89,6 +90,7 @@
     <ClInclude Include="include\json\writer.h" />
     <ClInclude Include="include\ObjectBase.h" />
     <ClInclude Include="include\EString.h" />
+    <ClInclude Include="include\ProtoImpl.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
@@ -98,6 +100,7 @@
     <ClCompile Include="business\json\json_writer.cpp" />
     <ClCompile Include="business\ObjectBase.cpp" />
     <ClCompile Include="business\EString.cpp" />
+    <ClCompile Include="business\ProtoImpl.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="libbase.rc" />

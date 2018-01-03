@@ -31,7 +31,7 @@ public:
 
 	static CLibentry *m_libentry;
 private:
-	void execute();
+	void execute(CProtoImpl *pProtoImpl);
 	
 };
 

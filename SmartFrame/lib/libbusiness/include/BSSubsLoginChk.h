@@ -18,7 +18,7 @@ public:
 	CBSSubsLoginChk();
 	~CBSSubsLoginChk();
 
-	bool SubsPswdChk();
+	bool SubsPswdChk(CJson jsSubsInfo);
 private:
 
 };

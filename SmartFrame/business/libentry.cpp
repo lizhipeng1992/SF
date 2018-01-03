@@ -15,10 +15,16 @@ CBaseEntry *DllEntry()
 	return new CLibentry;
 }
 
-void CLibentry::execute()
+void CLibentry::execute(CProtoImpl *pProtoImpl)
 {
 	printf("we will rock you");
-	CBSSubsLoginChk bsSubsLoginChk;
-	bsSubsLoginChk.SubsPswdChk();
+
+
+	if (0 == strcmp(pProtoImpl->GetProcCode(), "LoginChk"))
+	{
+		CBSSubsLoginChk bsSubsLoginChk;
+		bsSubsLoginChk.SubsPswdChk(pProtoImpl->m_MsgBody);
+	}
+	
 	return;
 }
