@@ -75,7 +75,7 @@ const char* CEString::Format( const char *pszFormat, ... )
 	m_data = new char[m_length + 1];
 	strcpy(m_data, szBuffer);
 
-	return szBuffer;
+	return m_data;
 }
 
 CEString::~CEString()
