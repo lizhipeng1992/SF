@@ -13,7 +13,7 @@
 #define SE_PATH_MAX 512  //路径最大长度
 
 //路径分割符
-#ifdef WIN32
+#ifdef _WIN32
 #define SE_PATH_SPLIT_CHAR "\\"
 #else
 #define SE_PATH_SPLIT_CHAR "//"

@@ -16,7 +16,7 @@
 
 typedef CBaseEntry *(BaseEntry)();
 
-#ifndef WIN32
+#ifndef _WIN32
 typedef void* HMODULE;
 #endif
 

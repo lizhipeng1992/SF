@@ -11,7 +11,7 @@
 #define   MPFILE_H_FILE
 
 #include "MpBase.h"
-#include <stdio.h>
+#include "stdio.h"
 
 //文件打开方式
 #define SE_FILE_READ          "r"

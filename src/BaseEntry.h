@@ -10,7 +10,7 @@
 #ifndef   BASEENTRY_H_FILE
 #define   BASEENTRY_H_FILE
 
-#ifdef WIN32
+#ifdef _WIN32
 #define DLLIMP __declspec(dllimport)
 #define DLLEXP __declspec(dllexport)
 #else

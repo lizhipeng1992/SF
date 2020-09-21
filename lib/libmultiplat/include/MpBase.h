@@ -17,16 +17,16 @@ enum PLATTYPE
 	AIX
 };
 
-#ifdef WIN32
+#ifdef _WIN32
 #define HANDLE_MOD HMODULE
-#elif LINUX
-#define HANDLE_MOD void
+#else
+#define HANDLE_MOD void*
 #endif
 
-#if WIN32
+#if _WIN32
 #include <Windows.h>
 #include <direct.h>
-#elif
+#else
 #include <dlfcn.h>
 #include <unistd.h>
 #endif

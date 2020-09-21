@@ -9,7 +9,7 @@
 
 #include "MpFile.h"
 
-#ifdef WIN32
+#ifdef _WIN32
 
 FILE * MPFileOpen( const char *pszFileName, const char *pszOpenType )
 {
