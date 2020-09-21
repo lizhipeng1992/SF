@@ -13,7 +13,7 @@
 
 void *MPLoadLibrary(const char *pszLibPath)
 {
-	return dlopen(pszLibPath);
+	return dlopen(pszLibPath, RTLD_LAZY);
 }
 
 void *MPGetProcAddr(HANDLE_MOD hMod, const char *pszProcName)
@@ -23,7 +23,7 @@ void *MPGetProcAddr(HANDLE_MOD hMod, const char *pszProcName)
 
 int MPFreeLibrary(HANDLE_MOD hMod)
 {
-	return dlclose(HANDLE_MOD hMod);
+	return dlclose(hMod);
 }
 
 #endif

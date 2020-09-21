@@ -11,6 +11,7 @@
 #define   BSSUBSLOGINCHK_H_FILE
 
 #include "Json.h"
+#include "string.h"
 
 class CBSSubsLoginChk
 {
