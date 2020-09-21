@@ -3,10 +3,10 @@
         {
             "name": "Win32",
             "includePath":[
-                "D:/study/git-repo/SmartFrame/src",
-                "D:/study/git-repo/SmartFrame/lib/libbase/include",
-                "D:/study/git-repo/SmartFrame/lib/libbusiness/include",
-                "D:/study/git-repo/SmartFrame/lib/libmultiplat/include",
+                "D:/soft/cygwin64/home/lizhipeng01/git/SmartFrame/src",
+                "D:/soft/cygwin64/home/lizhipeng01/git/SmartFrame/lib/libbase/include",
+                "D:/soft/cygwin64/home/lizhipeng01/git/SmartFrame/lib/libbusiness/include",
+                "D:/soft/cygwin64/home/lizhipeng01/git/SmartFrame/lib/libmultiplat/include",
                 "D:/soft/cygwin64/usr/include"
             ],
             "defines": [
