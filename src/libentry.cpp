@@ -1,5 +1,5 @@
 /*************************************************************************************
-  FileName: F:\vs2012Proj\SmartFrame\SmartFrame\business\libentry.cpp
+  FileName: SmartFrame\src\libentry.cpp
   Author:   lizhipeng
   Version : 1.0.0.0
   Date:2017/11/24

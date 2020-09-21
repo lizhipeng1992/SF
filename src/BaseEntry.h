@@ -1,7 +1,7 @@
 /*************************************************************************************
-  FileName: F:\vs2012Proj\SmartFrame\SmartFrame\include\BaseEntry.h
+  FileName: SmartFrame\src\BaseEntry.h
   Author:   lizhipeng
-  Version : 1.0.0.0
+  Version : 2.0.0.0
   Date:2017/11/24
   Description: 条带入口基类
   History: 

@@ -1,24 +1,22 @@
 /*************************************************************************************
-  FileName: SmartFrame\lib\libbusiness\include\BSSubsLoginChk.h
+  FileName: SmartFrame\lib\libbase\include\FileBase.h
   Author:   lizhipeng
   Version : 1.0.0.0
-  Date:2017/12/31
+  Date:2017/12/30
   Description: 
   History: 
 *************************************************************************************/
 
-#ifndef   BSSUBSLOGINCHK_H_FILE
-#define   BSSUBSLOGINCHK_H_FILE
+#ifndef   FILEBASE_H_FILE
+#define   FILEBASE_H_FILE
 
-#include "Json.h"
 
-class CBSSubsLoginChk
+class CFileBase
 {
 public:
-	CBSSubsLoginChk();
-	~CBSSubsLoginChk();
+	CFileBase();
+	~CFileBase();
 
-	bool SubsPswdChk(CJson jsSubsInfo);
 private:
 
 };

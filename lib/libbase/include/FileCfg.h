@@ -1,5 +1,5 @@
 /*************************************************************************************
-  FileName: F:\vs2012Proj\SmartFrame\SmartFrame\lib\libbase\include\FileCfg.h
+  FileName: SmartFrame\lib\libbase\include\FileCfg.h
   Author:   lizhipeng
   Version : 1.0.0.0
   Date:2017/12/30

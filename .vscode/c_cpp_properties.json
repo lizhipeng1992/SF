@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath":[
+                "D:/study/git-repo/SmartFrame/src",
+                "D:/study/git-repo/SmartFrame/lib/libbase/include",
+                "D:/study/git-repo/SmartFrame/lib/libbusiness/include",
+                "D:/study/git-repo/SmartFrame/lib/libmultiplat/include",
+                "D:/soft/win10sdk/Include/10.0.19041.0/um"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "D:\\soft\\cygwin64\\bin\\gcc.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}
