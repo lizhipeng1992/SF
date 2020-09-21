@@ -9,6 +9,7 @@
 
 #include "libentry.h"
 #include "BSSubsLoginChk.h"
+#include "string.h"
 
 CBaseEntry *DllEntry()
 {

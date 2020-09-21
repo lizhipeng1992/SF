@@ -16,6 +16,10 @@
 
 typedef CBaseEntry *(BaseEntry)();
 
+#ifndef WIN32
+typedef void* HMODULE;
+#endif
+
 class CLibrary
 {
 public:

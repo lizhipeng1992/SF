@@ -15,7 +15,7 @@
 //Â·¾¶·Ö¸î·û
 #ifdef WIN32
 #define SE_PATH_SPLIT_CHAR "\\"
-#elif LINUX
+#else
 #define SE_PATH_SPLIT_CHAR "//"
 #endif
 

@@ -7,7 +7,7 @@
                 "D:/study/git-repo/SmartFrame/lib/libbase/include",
                 "D:/study/git-repo/SmartFrame/lib/libbusiness/include",
                 "D:/study/git-repo/SmartFrame/lib/libmultiplat/include",
-                "D:/soft/win10sdk/Include/10.0.19041.0/um"
+                "D:/soft/cygwin64/usr/include"
             ],
             "defines": [
                 "_DEBUG",
