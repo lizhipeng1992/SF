@@ -30,8 +30,10 @@ $(OBJS):$(SRCS)
 all:$(OBJS)
 	ar rcs $(TARGET) $^ 
 	mv *.o ./debug
-	mv $(TARGET) $(LIBPATH)
 
 clean:
-	rm -f *.o
+	rm -f ./debug/*.o
 	rm -f $(LIBPATH)/$(TARGET)
+
+install:
+	mv $(TARGET) $(LIBPATH)

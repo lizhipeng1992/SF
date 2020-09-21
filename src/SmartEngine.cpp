@@ -61,12 +61,12 @@ void CSmartEngine::SEngineProcess()
 void CSmartEngine::LoadEngineConfig(const char *pszConfigFile)
 {
 	//配置文件路径
-	CEString esConfPath;
+	/*CEString esConfPath;
 	esConfPath.Format("%s%s%s", m_szWorkPath, SE_PATH_SPLIT_CHAR, pszConfigFile);
 	printf("esConfig is %s\n", esConfPath.GetData());
 
 	//打开文件
-	FILE *fileConf = MPFileOpen(esConfPath.GetData(), SE_FILE_READ);
+	FILE *fileConf = MPFileOpen(esConfPath.GetData(), SE_FILE_READ);*/
 
 	//未完..
 }

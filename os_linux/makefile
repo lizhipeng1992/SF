@@ -1,9 +1,9 @@
 CC        = g++
 CFLAGS    = -Wall -O -g
 CXXFLAGS  = 
-INCLUDE   = -I ../lib/libbase/include -I ../lib/libbusiness/include -I ../lib/libmultiplat/include -I ../src/
-TARGET    = libbase.a
-LIBPATH   = ../../../../os_linux/
+INCLUDE   = -I ../lib/libbase/include/json -I ../lib/libbase/include -I ../lib/libbusiness/include -I ../lib/libmultiplat/include -I ../src/
+TARGET    = FrameWork
+LIBPATH   = .
 
 
 OBJS      = FrameContext.o\
@@ -11,12 +11,13 @@ OBJS      = FrameContext.o\
 			Library.o\
 			SmartEngine.o\
 			SmartFrame.o\
-all: $(TARGET) libbase.a
-$(TARGET): $(OBJS) 
+
+$(TARGET): $(OBJS) libbase.a
 	$(CC) $(CFLAGS) -o $@ $^
-%.o:%.cpp
-	$(CC) $(CFLAGS) -c $<
+	mv *.o ./debug/
+%.o:../src/%.cpp
+	$(CC) $(CFLAGS) -c $< $(INCLUDE)
 
 clean:
-	rm -f *.o
+	rm -f ./debug/*.o
 	rm -f $(LIBPATH)/$(TARGET)
