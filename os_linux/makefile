@@ -7,12 +7,11 @@ LIBPATH   = .
 
 
 OBJS      = FrameContext.o\
-			libentry.o\
 			Library.o\
 			SmartEngine.o\
 			SmartFrame.o\
 
-$(TARGET): $(OBJS) libbase.a
+$(TARGET): $(OBJS) libbase.a libmultiplat.a
 	$(CC) $(CFLAGS) -o $@ $^
 	mv *.o ./debug/
 %.o:../src/%.cpp

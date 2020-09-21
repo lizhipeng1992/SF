@@ -6,8 +6,11 @@ INCLUDE   = -I ../../include -I ../../../libbase/include -I ../../../libbase/inc
 TARGET    = libbusiness.so
 LIBPATH   = ../../../../os_linux
 
-OBJS      = BSSubsLoginChk.o
-SRCS      = ../../business/BSSubsLoginChk.cpp
+OBJS      = BSSubsLoginChk.o\
+			libentry.o
+
+SRCS      = ../../business/BSSubsLoginChk.cpp\
+			../../business/libentry.cpp
 
 all:$(TARGET)
 
