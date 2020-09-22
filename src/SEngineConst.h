@@ -15,8 +15,10 @@
 //Â·¾¶·Ö¸î·û
 #ifdef _WIN32
 #define SE_PATH_SPLIT_CHAR "\\"
+#define SE_DYNAMIC_LIB_SUFFIX ".dll"
 #else
 #define SE_PATH_SPLIT_CHAR "//"
+#define SE_DYNAMIC_LIB_SUFFIX ".so"
 #endif
 
 #endif

@@ -33,10 +33,10 @@ void CSmartEngine::SEnginePreDeal()
 {
 	//¿âÎÄ¼þÂ·¾¶
 	CEString esLibName;
-	esLibName.SetData("libbusiness.dll");
+	esLibName.SetData("libbusiness");
 
 	CEString esLibPath;
-	esLibPath.Format("%s%s%s", m_szWorkPath, SE_PATH_SPLIT_CHAR, esLibName.GetData());
+	esLibPath.Format("%s%s%s%s", m_szWorkPath, SE_PATH_SPLIT_CHAR, esLibName.GetData(), SE_DYNAMIC_LIB_SUFFIX);
 
 	CLibrary *lib = new CLibrary();
 	lib->LibLoad(esLibPath.GetData());
