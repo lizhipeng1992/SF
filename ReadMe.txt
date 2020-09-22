@@ -4,8 +4,11 @@
 
 项目初衷：用C++搭建一套工作在应用程序与动态库之间的可复用的适配框架
 
+lib
+ |-libbase		静态库文件，基础数据结构实现
+ |-libbusiness	动态库文件，业务实现
+ |-libmultiplat	静态库文件，多平台底层适配，适配windows和Linux平台
 
-SmartFrame.cpp 这是主应用程序源文件。
-
-
-
+os_linux		linux系统下的程序生成目录，也包含主程序的makefile
+os_win		windows系统下的程序生成目录
+src		主程序的源代码路径，SmartFrame.cpp 这是主应用程序源文件
