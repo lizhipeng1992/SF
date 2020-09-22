@@ -10,5 +10,5 @@ lib
  |-libmultiplat	静态库文件，多平台底层适配，适配windows和Linux平台
 
 os_linux	linux系统下的程序生成目录，也包含主程序的makefile
-os_win	    windows系统下的程序生成目录
+os_win	        windows系统下的程序生成目录
 src	        主程序的源代码路径，SmartFrame.cpp 这是主应用程序源文件
